@@ -6,7 +6,9 @@
 # Ferramentas usadas.
 
  :red_circle:HTML
+ 
  :purple_circle:CSS
+ 
  :yellow_circle: Javascript
  
  # Wireframe
