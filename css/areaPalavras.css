@@ -1,0 +1,31 @@
+.areaPalavras {
+  
+    display: grid;
+    grid-template-columns: 1fr 10rem;
+    gap: 0.5rem;
+    
+}
+
+
+
+form textarea {
+    background: none;
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    height: 23.5rem;
+    border: .9rem solid #f2f2f2;
+    outline: none;
+    resize: none;
+}
+
+.clipEcontador {
+    grid-area: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clipEcontador section {
+    width: 10rem;
+    margin-right: -2.1rem;
+}

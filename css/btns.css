@@ -1,0 +1,32 @@
+.btns {
+   
+    justify-self: center;
+   
+}
+
+.btns ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2rem;
+    
+}
+
+.btns ul li {
+    max-width: 10rem;
+   
+    margin-bottom: 1rem;
+
+}
+
+
+
+.btn {
+    border: 0.2rem solid ;
+    background-color: #bf82d9;
+}
+
+.btn h3{
+    text-align: center;
+    font-size: 0.95rem;
+}
