@@ -1,7 +1,7 @@
 .btns {
-   
+
     justify-self: center;
-   
+
 }
 
 .btns ul {
@@ -9,24 +9,35 @@
     flex-direction: column;
     align-content: center;
     margin-top: 2rem;
-    
+
 }
 
 .btns ul li {
     max-width: 10rem;
-   
     margin-bottom: 1rem;
-
 }
 
 
 
 .btn {
-    border: 0.2rem solid ;
+    border: 0.2rem solid;
     background-color: #bf82d9;
+    box-shadow: 0.5rem 0.5rem 0.1rem black;
 }
 
-.btn h3{
+.btn h3 {
     text-align: center;
     font-size: 0.95rem;
+}
+
+.btn:hover{
+    background-color:  #65088d;
+    color: rgb(230, 230, 230);
+    animation: clicked .3s forwards;
+}
+
+@keyframes clicked {
+    to {
+        box-shadow:0rem 0rem 0rem;
+}
 }
