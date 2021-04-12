@@ -1,9 +1,11 @@
 header{
     margin-top: 0.75rem;
     justify-self: center;
-    align-self: end;
+ 
+    display: flex;
 }
 
 .titulo {
     font-size: 2.375rem;
+    flex-wrap: wrap;
 }

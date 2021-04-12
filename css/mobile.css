@@ -1,0 +1,30 @@
+@media screen and (max-width: 615px){
+
+  
+
+    section .contador, .clipboard {
+        display: none;
+    }
+
+    section .web{
+        display: none;
+    }
+
+    section .mobile{
+        display: flex;
+        
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+      
+       
+    }
+    .mobile section{
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: -2.2rem;
+    }
+}

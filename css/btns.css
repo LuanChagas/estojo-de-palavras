@@ -33,11 +33,27 @@
 .btn:hover{
     background-color:  #65088d;
     color: rgb(230, 230, 230);
-    animation: clicked .3s forwards;
+    animation: hover 100ms forwards;
+}
+@keyframes hover {
+    to {
+        box-shadow:.3rem .3rem 0rem black;
+}
+}
+
+.btn:active {
+    box-shadow: 0rem 0rem 0rem;
+    animation: clicked .5s none;
 }
 
 @keyframes clicked {
-    to {
-        box-shadow:0rem 0rem 0rem;
+    from{
+        box-shadow: 0rem 0rem 0rem;
+    }
+    to{
+        box-shadow:.3rem .3rem 0rem black;
+    }
 }
-}
+
+
+
