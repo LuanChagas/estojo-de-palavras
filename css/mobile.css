@@ -23,11 +23,7 @@
         display: none;
     }
 
-    section .mobile{
-        display: flex;
-        
-    }
-
+    
     .mobile{
         display: flex;
         justify-content: space-between;
@@ -37,10 +33,18 @@
         width: 3.5rem;
         height: 3.5rem;
         margin-right: -2.2rem;
+        margin-top: 1rem;
     }
 }
 
 @media screen and (max-width: 535px){
+
+    header{
+        margin-top: 0.1rem;
+        text-align: center;
+    }
+
+   
     .nav-web{
         display: none;
     }
@@ -57,12 +61,27 @@
     .areaPalavras{
         grid-area: area;
         margin-left:1rem;
+        
+    }
+
+    .clipEcontador{
+        position: fixed;
+        bottom: 10%;
+        width: 100%;
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile .contador-mobile{
+        margin-right:2em;
     }
 
     .btns{ 
         width:100%;
         position: fixed;
-        bottom: -5%;
+        bottom: -4%;
         
     }
     
@@ -87,6 +106,8 @@
     box-shadow:none;
 }
     footer{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+        
     }
+
 }
