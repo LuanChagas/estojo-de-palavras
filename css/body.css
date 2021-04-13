@@ -25,3 +25,7 @@ a{
 section .mobile{
     display: none;
 }
+
+.nav-mobile{
+        display: none;
+     }

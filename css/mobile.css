@@ -1,6 +1,19 @@
 @media screen and (max-width: 615px){
 
-  
+    .container{
+        display: grid;
+        grid-template-columns:minmax(50px, auto)minmax(400px, auto) ;
+    }
+
+    .btns ul {
+        align-content: flex-start;
+        margin-top: 2rem;
+    
+    }
+    
+    .areaPalavras {
+        margin-right: 3rem;
+    }
 
     section .contador, .clipboard {
         display: none;
@@ -18,13 +31,62 @@
     .mobile{
         display: flex;
         justify-content: space-between;
-      
-       
     }
     .mobile section{
         border-radius: 50%;
         width: 3.5rem;
         height: 3.5rem;
         margin-right: -2.2rem;
+    }
+}
+
+@media screen and (max-width: 535px){
+    .nav-web{
+        display: none;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns:minmax(20px, auto);
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; */
+        grid-template-areas: 'area'
+                            'navegacao'; 
+    }
+
+    .areaPalavras{
+        grid-area: area;
+        margin-left:1rem;
+    }
+
+    .btns{ 
+        width:100%;
+        position: fixed;
+        bottom: -5%;
+        
+    }
+    
+    .nav-mobile {
+        grid-area: navegacao;  
+        display: flex; 
+        background-color: #bf82d9;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline-start: 0px;
+        border-top:0.2rem solid;
+        box-shadow: inset 0rem .1rem .1rem rgb(48, 45, 45);
+    }
+    .nav-mobile li {
+     flex-grow: 1;
+     
+    }
+    
+    .nav-mobile .btn{
+    border:none;
+    background-color: 0;
+    box-shadow:none;
+}
+    footer{
+    margin-bottom: 2rem;
     }
 }
