@@ -7,7 +7,10 @@ ul {
     list-style-type: none;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -17,15 +20,15 @@ h1,h2,h3,h4 {
     gap: 1rem;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
-.nav-mobile{
-        display: none;
-     }
+.nav-mobile {
+    display: none;
+}

@@ -25,15 +25,16 @@
     font-size: 0.95rem;
 }
 
-.btn:hover{
-    background-color:  #65088d;
+.btn:hover {
+    background-color: #65088d;
     color: rgb(230, 230, 230);
     animation: hover 100ms forwards;
 }
+
 @keyframes hover {
     to {
-        box-shadow:.3rem .3rem 0rem black;
-}
+        box-shadow: .3rem .3rem 0rem black;
+    }
 }
 
 .btn:active {
@@ -42,13 +43,10 @@
 }
 
 @keyframes clicked {
-    from{
+    from {
         box-shadow: 0rem 0rem 0rem;
     }
-    to{
-        box-shadow:.3rem .3rem 0rem black;
+    to {
+        box-shadow: .3rem .3rem 0rem black;
     }
 }
-
-
-
