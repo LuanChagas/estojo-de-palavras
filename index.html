@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,6 @@
     <style></style>
     <title>Estojo de Palavras</title>
 </head>
-
 <body>
     <header class="header">
         <h1 class="titulo">
@@ -57,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a>
                             <section class="btn minusculas">
                                 <img src="img/minusculas.svg" alt="">
                             </section>
@@ -90,27 +88,27 @@
         <section class="areaPalavras">
             <section class="form">
                 <form>
-                    <textarea name="palavras"></textarea>
+                    <textarea name="palavras" id="texto"></textarea>
                 </form>
             </section>
             <section class="clipEcontador">
                 <section class="web">
-                    <section class="btn clipboard">
+                    <section class="btn clipboard" id='clipboard'>
                         <h3>CLIPBOARD</h3>
                     </section>
                     <section class="btn contador">
-                        <h3>18</h3>
+                        <h3 id="contador">O</h3>
                     </section>
                 </section>
                 <section class="mobile">
-                    <a href="">
-                        <section class="btn clipboard-mobile">
+                    <a href="" >
+                        <section class="btn clipboard-mobile" id=clipboard>
                             <h3>CLIP</h3>
                         </section>
                     </a>
                     <a href="">
-                        <section class="btn contador-mobile">
-                            <h3>18</h3>
+                        <section class="btn contador-mobile" >
+                            <h3 id="contador">O</h3>
                         </section>
                     </a>
                 </section>
@@ -129,5 +127,5 @@
         </section>
     </footer>
 </body>
-
+<script type="module" src="js/index.js"></script>
 </html>
