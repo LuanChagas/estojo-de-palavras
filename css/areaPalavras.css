@@ -1,29 +1,34 @@
 .areaPalavras {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
 }
 
 form textarea {
-    background: none;
-    font-family: 'Roboto Mono', monospace;
-    width: 100%;
-    height: 23.5rem;
-    border: .9rem solid #f2f2f2;
-    outline: none;
-    resize: none;
-    box-shadow: inset 0rem 0rem 1rem rgb(48, 45, 45), 1rem 1rem .1rem rgb(48, 45, 45);
+  background: none;
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  height: 23.5rem;
+  border: 0.9rem solid #f2f2f2;
+  outline: none;
+  resize: none;
+  box-shadow: inset 0rem 0rem 1rem rgb(48, 45, 45),
+    1rem 1rem 0.1rem rgb(48, 45, 45);
 }
 
 .web {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .web section {
-    margin-top: 1rem;
-    min-width: 10rem;
-    margin-right: -2.1rem;
+  margin-top: 1rem;
+  min-width: 10rem;
+  margin-right: -2.1rem;
+}
+
+.risc {
+  text-decoration: line-through;
 }

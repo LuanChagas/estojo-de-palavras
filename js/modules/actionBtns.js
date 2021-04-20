@@ -9,7 +9,9 @@ export default class ActionBtns {
     this.btnIniciaisMaiscula = document.querySelectorAll(".iniciasMaiusculas");
     this.btnClip = document.querySelectorAll("#clipboard");
     this.mostrarCaracteres = document.querySelectorAll("#contador");
-    this.fazer();
+    this.LetrasENumeros = document.querySelectorAll(".letrasNumeros");
+    this.riscar = document.querySelectorAll(".riscado");
+    this.init();
   }
 
   fazendoMaiuscula() {
@@ -39,6 +41,24 @@ export default class ActionBtns {
     });
   }
 
+  fazerLetrasENumeros() {
+    this.LetrasENumeros.forEach((lN) => {
+      lN.addEventListener("click", (e) => {
+        e.preventDefault();
+        funcao.tornarNumeros();
+      });
+    });
+  }
+
+  fazendoRiscar() {
+    this.riscar.forEach((risc) => {
+      risc.addEventListener("click", (e) => {
+        e.preventDefault();
+        funcao.tornarRisc();
+      });
+    });
+  }
+
   fazendoContar() {
     ["keyup", "keydown"].forEach((evento) => {
       funcao.texto.addEventListener(evento, (e) => {
@@ -58,11 +78,13 @@ export default class ActionBtns {
     });
   }
 
-  fazer() {
+  init() {
     this.fazendoMaiuscula();
     this.fazendoMinuscula();
     this.fazendoIniciasMaiuscula();
     this.fazerClip();
     this.fazendoContar();
+    this.fazerLetrasENumeros();
+    this.fazendoRiscar();
   }
 }

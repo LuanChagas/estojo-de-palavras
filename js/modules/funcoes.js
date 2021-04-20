@@ -28,13 +28,36 @@ export default class Funcoes {
     this.texto.value = primeira;
   }
 
+  tornarNumeros() {
+    let letrasEnumeros = [
+      ["a", "4"],
+      ["b", "8"],
+      ["e", "3"],
+      ["g", "g"],
+      ["h", "#"],
+      ["i", "1"],
+      ["l", "1"],
+      ["o", "0"],
+      ["s", "5"],
+      ["t", "7"],
+      ["z", "2"],
+    ];
+    this.texto.value = this.texto.value.toLowerCase();
+    letrasEnumeros.forEach((leet) => {
+      this.texto.value = this.texto.value.replace(leet[0], leet[1]);
+    });
+  }
+
+  tornarRisc() {
+    this.texto.classList.toggle("risc");
+  }
+
   clipboard() {
     this.texto.select();
     document.execCommand("copy");
   }
 
   contador() {
-    console.log(this.texto.value.lengt);
     return this.texto.value.length;
   }
 }

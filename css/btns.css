@@ -1,5 +1,6 @@
 .btns {
     justify-self: center;
+    cursor: pointer;
 }
 
 .nav-web.btns ul {
@@ -19,6 +20,7 @@
     background-color: #bf82d9;
     box-shadow: 0.5rem 0.5rem 0.1rem black;
     outline: none;
+    cursor: pointer;
 }
 
 .btn h3 {
