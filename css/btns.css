@@ -1,55 +1,84 @@
 .btns {
-    justify-self: center;
-    cursor: pointer;
+  justify-self: center;
+  cursor: pointer;
 }
 
 .nav-web.btns ul {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 2rem;
 }
 
 .btns ul li {
-    max-width: 10rem;
-    margin-bottom: 1rem;
+  max-width: 10rem;
+  margin-bottom: 1rem;
 }
 
 .btn {
-    border: 0.2rem solid;
-    background-color: #bf82d9;
-    box-shadow: 0.5rem 0.5rem 0.1rem black;
-    outline: none;
-    cursor: pointer;
+  border: 0.2rem solid;
+  background-color: #bf82d9;
+  box-shadow: 0.5rem 0.5rem 0.1rem black;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn h3 {
-    text-align: center;
-    font-size: 0.95rem;
+  text-align: center;
+  font-size: 0.95rem;
 }
-
-.btn:hover {
+@media screen and (min-width: 769px) {
+  .btn:hover {
     background-color: #65088d;
     color: rgb(230, 230, 230);
     animation: hover 100ms forwards;
-}
+  }
 
-@keyframes hover {
+  @keyframes hover {
     to {
-        box-shadow: .3rem .3rem 0rem black;
+      box-shadow: 0.3rem 0.3rem 0rem black;
     }
-}
+  }
 
-.btn:active {
+  .btn:active {
     box-shadow: 0rem 0rem 0rem;
-    animation: clicked .5s none;
-}
+    animation: clicked 0.5s none;
+  }
 
-@keyframes clicked {
+  @keyframes clicked {
     from {
-        box-shadow: 0rem 0rem 0rem;
+      box-shadow: 0rem 0rem 0rem;
     }
     to {
-        box-shadow: .3rem .3rem 0rem black;
+      box-shadow: 0.3rem 0.3rem 0rem black;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn:hover {
+    animation: hover 200ms alternate;
+  }
+
+  @keyframes hover {
+    to {
+      box-shadow: 0.3rem 0.3rem 0rem black;
+    }
+  }
+
+  .btn:active {
+    box-shadow: 0rem 0rem 0rem;
+    animation: clicked 0.6s backwards;
+  }
+
+  @keyframes clicked {
+    from {
+      background-color: #65088d;
+      color: rgb(230, 230, 230);
+      box-shadow: 0rem 0rem 0rem;
+    }
+    to {
+      box-shadow: 0.3rem 0.3rem 0rem black;
+    }
+  }
 }
