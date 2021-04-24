@@ -29,11 +29,64 @@
     margin-right: -2.2rem;
     margin-top: 1rem;
   }
+
+  .modal {
+
+    top: 60%;
+    right: 30%;
+
+  }
+ 
+  @keyframes buttonToTop {
+    from {
+      top: 55%;
+      right: 30%;
+    }
+    to {
+      top: 60%;
+      right: 30%;
+    }
+  }
+
+  @keyframes topToBottom {
+    from {
+      top: 45%;
+      right: 30%;
+    }
+    to {
+      top: 60%;
+      right: 30%;
+    }
+  }
+  
+  @keyframes leftToRight {
+    from {
+      top: 60%;
+      right: 10%;
+    }
+    to {
+      top: 60%;
+      right: 30%;
+    }
+  }
+  
+  @keyframes rightToLeft {
+    from {
+      top: 60%;
+      right: 55%;
+    }
+    to {
+      top: 60%;
+      right: 30%;
+    }
+  }
+  
+  
 }
 
 @media screen and (max-width: 535px) {
   header {
-    margin-top: 0.1rem;
+    margin-top: -.5rem;
     text-align: center;
   }
   .nav-web {
@@ -50,15 +103,14 @@
     grid-area: area;
     margin-left: 1rem;
   }
-  .clipEcontador {
+
+  .mobile {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom: 10%;
     width: 100%;
     z-index: 1;
-  }
-  .mobile {
-    display: flex;
-    justify-content: space-between;
   }
   .mobile .contador-mobile {
     margin-right: 2em;
@@ -96,6 +148,7 @@
     padding-inline-start: 0px;
     border-top: 0.2rem solid;
     box-shadow: inset 0rem 0.1rem 0.1rem rgb(48, 45, 45);
+    padding-left: 1rem;
   }
   .nav-mobile li {
     flex-grow: 1;
@@ -118,4 +171,29 @@
   footer h5 {
     text-align: center;
   }
+  .modal {
+   max-width: 11rem;
+   top: 60%;
+   right: 30%;
+  }
+  
+  .modal-content {
+    padding: .5rem;
+  }
+
+  .modal h3{
+    font-size: 1rem;
+  }
+
+  @keyframes rightToLeft {
+    from {
+      top: 60%;
+      right: 45%;
+    }
+    to {
+      top: 60%;
+      right: 30%;
+    }
+
+}
 }

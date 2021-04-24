@@ -1,0 +1,56 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  background-color: #bf82d9;
+  border: 0.2rem solid;
+}
+
+.modal-content {
+  padding: 0.1rem;
+}
+
+@keyframes buttonToTop {
+  from {
+    top: 55%;
+    right: 50%;
+  }
+  to {
+    top: 50%;
+    right: 50%;
+  }
+}
+
+@keyframes topToBottom {
+  from {
+    top: 45%;
+    right: 50%;
+  }
+  to {
+    top: 50%;
+    right: 50%;
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    top: 50%;
+    right: 45%;
+  }
+  to {
+    top: 50%;
+    right: 50%;
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    top: 50%;
+    right: 50%;
+  }
+  to {
+    top: 50%;
+    right: 50%;
+  }
+}

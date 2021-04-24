@@ -1,6 +1,8 @@
 import funcoes from "./funcoes.js";
+import modal from "./modal.js";
 
 let funcao = new funcoes();
+let mod = new modal();
 
 export default class ActionBtns {
   constructor() {
@@ -50,15 +52,6 @@ export default class ActionBtns {
     });
   }
 
-  fazendoRiscar() {
-    this.riscar.forEach((risc) => {
-      risc.addEventListener("click", (e) => {
-        e.preventDefault();
-        funcao.tornarRisc();
-      });
-    });
-  }
-
   fazendoContar() {
     ["keyup", "keydown"].forEach((evento) => {
       funcao.texto.addEventListener(evento, (e) => {
@@ -74,6 +67,7 @@ export default class ActionBtns {
       bt.addEventListener("click", (e) => {
         e.preventDefault();
         funcao.clipboard();
+        mod.mostrarModal()
       });
     });
   }
@@ -85,6 +79,5 @@ export default class ActionBtns {
     this.fazerClip();
     this.fazendoContar();
     this.fazerLetrasENumeros();
-    this.fazendoRiscar();
   }
 }
